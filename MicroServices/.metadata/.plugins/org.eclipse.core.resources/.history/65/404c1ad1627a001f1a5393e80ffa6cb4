@@ -1,0 +1,12 @@
+package com.example.demo;
+
+//import org.springframework.stereotype.Component;
+
+
+public class Limits {
+	
+	private int minimum;
+	private int maximum;
+
+
+}

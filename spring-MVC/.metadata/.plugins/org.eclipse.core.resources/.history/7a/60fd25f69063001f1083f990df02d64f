@@ -1,0 +1,10 @@
+package com.vamsi.controller;
+
+public class HelloController {
+	
+	public String Hellocontroller() {
+		System.out.println("Hello World");
+		return HelloPage;
+	}
+
+}

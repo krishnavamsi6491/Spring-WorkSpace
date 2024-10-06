@@ -1,0 +1,7 @@
+package com.vamsi.setup;
+
+import org.aopalliance.intercept.Interceptor;
+
+public class interseptors implements Interceptor {
+
+}

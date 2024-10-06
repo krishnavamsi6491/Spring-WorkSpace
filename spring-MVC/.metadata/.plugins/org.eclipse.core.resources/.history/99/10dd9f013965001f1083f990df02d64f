@@ -1,0 +1,37 @@
+package com.vamsi.setup;
+
+import javax.servlet.ServletContext;
+
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
+
+import io.micrometer.observation.Observation.Context;
+
+
+public class MyDispatcherServlet implements WebApplicationInitializer {
+
+	
+
+	public void onStartup(ServletContext servletContext)  {
+		// TODO Auto-generated method stub
+		AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+		context.register(AppConfig.class);
+		
+		DispatcherServlet servlet = new DispatcherServlet(context);
+		servletContext.ad
+	}
+
+	@Override
+	public void onStartup(jakarta.servlet.ServletContext servletContext) throws ServletException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+	
+
+		
+
+}	

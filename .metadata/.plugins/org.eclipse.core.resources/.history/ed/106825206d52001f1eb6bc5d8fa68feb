@@ -1,0 +1,48 @@
+package com.vamsi.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionManager;
+
+import com.vamsi.DAO.HelloRepository;
+
+//import org.springframework.transaction.support.AbstractPlatformTransactionManager;
+
+import Accountmodel.model.Account;
+
+public class HelloServiceImpl implements HelloService {
+	
+	@Autowired
+	private HelloRepository repo;
+	
+	@Autowired
+	private PlatformTransactionManager  tansactionManager;
+
+	@Override
+	public void withdraw(Account acc, double amt) {
+		TransactionStatus transactionStatus = transactionManager.getTransaction(new DefaultTransactionDefinition());
+
+		try {
+			repo.updateAccountBalanceByWithdraw(acc.getAccid(), amt);
+			transactionManager.commit(transactionStatus);
+		} catch (Exception e) {
+			e.printStackTrace();
+			transactionManager.rollback(transactionStatus);
+		}
+
+
+	}
+
+	@Override
+	public void deposit(Account acc, double amt) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void transferAmount(Account source, Account dest, double amt) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

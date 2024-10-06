@@ -1,0 +1,13 @@
+package com.vamsi.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class Messagecontroller {
+	
+	public String sayhello() {
+		System.out.println("sayhello() called");
+		return "hellopage";
+	}
+	
+}

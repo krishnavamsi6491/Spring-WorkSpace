@@ -1,0 +1,7 @@
+package com.vamsi.setup;
+
+import org.springframework.web.WebApplicationInitializer;
+
+public class MyDispatcherServlet implements WebApplicationInitializer {
+
+}

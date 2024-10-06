@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<bean id="as" class="com.vamsi.service.AccountServiceImpl"></bean>
+
+	<bean id="lc" class="com.vamsi.Logging.LoggingConcern"></bean>
+
+	<aop:config>
+		<aop:aspect id="ac1" ref="lc">
+			<aop:pointcut id="pc1" expression="within(com.vamsi.service.AccountServiceImpl)"></aop:pointcut>
+			<aop:before method="LogBefore" pointcut-ref="pc1"></aop:before>
+			<aop:after-returning method="afterReturing" returning="rv" pointcut-ref="pc1"></aop:after-returning>
+			<aop:after-throwing method="afterThrowing" throwing="t" pointcut-ref="pc1"></aop:after-throwing>
+			<aop:after method="LogAfter" pointcut-ref="pc1"></aop:after>
+			
+		</aop:aspect>
+	</aop:config>
+
+
+</beans>

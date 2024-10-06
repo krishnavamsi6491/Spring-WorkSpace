@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;1-spring-ID&apos;&#x0D;&#x0A;- Original project: &apos;1-spring-ID&apos;&#x0D;&#x0A;- Original element: &apos;1-spring-ID/src/main/java/com.vamsi.Repository&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vamsi.Repository" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vamsi" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1719998980448" subPackages="false" version="1.0"/>
+</session>

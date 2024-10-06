@@ -1,0 +1,21 @@
+package com.vamsi.dao;
+
+public class EventDAOImpl implements EventDAO {
+
+	@Override
+	public void save(Event e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private SessionFactory factory = HibernateUtils.getFactory();
+
+	public void save(Event e) {
+		Session session = factory.openSession();
+		session.beginTransaction();
+		session.save(e);
+		session.getTransaction().commit();
+		session.close();
+	}
+
+}

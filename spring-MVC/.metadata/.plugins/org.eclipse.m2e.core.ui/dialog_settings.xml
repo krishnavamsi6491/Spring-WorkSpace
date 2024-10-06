@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.vamsi"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="app_four"/>
+			<item value="app_two"/>
+			<item value="app-three"/>
+			<item value="app-two"/>
+			<item value="app-one"/>
+			<item value="app1"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

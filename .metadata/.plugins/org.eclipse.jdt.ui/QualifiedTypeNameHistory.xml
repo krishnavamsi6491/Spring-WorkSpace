@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.vamsi.App"/>
+    <fullyQualifiedTypeName name="com.vamsi.controller.HelloController"/>
+    <fullyQualifiedTypeName name="com.vamsi.service.HelloServiceImpl"/>
+    <fullyQualifiedTypeName name="com.vamsi.Repository.HelloRepository"/>
+    <fullyQualifiedTypeName name="com.vamsi.Service.HelloService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="com.vamsi.Repository.HelloRepositoryImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="com.vamsi.Service.HelloServiceImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.TransactionManager"/>
+    <fullyQualifiedTypeName name="com.vamsi.service.HelloService"/>
+</qualifiedTypeNameHistroy>
